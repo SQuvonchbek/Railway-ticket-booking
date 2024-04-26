@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: railway-ticket-project
+  datasource:
+    url: jdbc:postgresql://localhost:5432/railway_ticket
+    username: postgres
+    password: quvonchbek
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: fendygamer2006@gmail.com
+    password: zadmjoynipyrihlh
+    properties:
+      mail:
+        smtp:
+          properties:
+            enable: true
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+
+jjwt:
+  token:
+    key:
+      secret: O4xoGCVmFqHnkkbcOkqnD/yB2V/W8dpQpFXq981jDOt4dnyB0Ya+v1DpYNYh8N+UXSMfPCC9wCglXyjAgEKsRQ==
+    time:
+      expiration: 1200000
+
+springdoc:
+  swagger-ui:
+    enabled: true
+app:
+  version: 0.1.1
